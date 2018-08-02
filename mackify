@@ -1,0 +1,11 @@
+#!/bin/bash
+echo "What interface would you like to mackify?";
+read intf;
+echo "What MAC would you like to set?";
+read macaddr;
+service network-manager stop; sleep 5
+ifconfig $intf down; ifconfig $intf hw ether $macaddr
+ifconfig $intf up; sleep 5; 
+service network-manager start; sleep 5;
+
+

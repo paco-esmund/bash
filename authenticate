@@ -1,0 +1,9 @@
+#!/bin/bash
+
+
+echo "What is the mac address of the device?"
+read mac
+echo "What is the ip address of the device?"
+read ipaddr
+echo "http://redir.nnu.com/?hwid=FALLONNGIS_490_HS_SERVER&usermac=$mac&clientip=$ipaddr&loginpageurl=https://WIFI1.VIASAT.COM/login&url=http%3A%2F%2Fwww.ti.com%2F"
+
